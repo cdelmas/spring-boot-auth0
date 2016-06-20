@@ -1,0 +1,13 @@
+server:
+  port: 8088
+
+security:
+  oauth2:
+    authorization:
+      realm: toto
+    resource:
+      id: www.example.com
+      jwt:
+        key-value: secret
+
+logging.level.org.springframework.security.oauth2: DEBUG

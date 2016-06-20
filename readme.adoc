@@ -1,0 +1,28 @@
+= Spring Boot and JWT
+
+== Build it
+
+To build the project, just run
+
+[source,bash]
+----
+./gradlew bootRepackage
+----
+
+== Run it
+
+Simple as a, b, c:
+
+[source,bash]
+----
+./gradlew bootRun
+----
+
+== Use it
+
+Make HTTP requests to `http://localhost:8088/hello` or `http://localhost:8088/admin`. 
+
+Add the Authorization header: `Authorization: Bearer ey..........`
+
+You can generate tokens with this online generator: http://jwtbuilder.jamiekurtz.com. You must add custom claims to access the endpoints (left as exercise).
+
